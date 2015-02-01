@@ -1,0 +1,49 @@
+[
+  {
+    attribute:'Wi-fi',
+    scores:[
+      {
+        value:'Yes',
+        score:3.5
+      },
+      {
+        value:'No',
+        score:2.0
+      }
+    ]
+  },
+  {
+    attribute:'Good for kids',
+    scores:[
+      {
+        value:'Yes',
+        score:4.0
+      },
+      {
+        value:'No',
+        score:3.5
+      }
+    ]
+  },
+  {
+    attribute:'Price range',
+    scores:[
+      {
+        value:'$',
+        score:1.5
+      },
+      {
+        value:'$$',
+        score:2.0
+      },
+      {
+        value:'$$$',
+        score:4.0
+      },
+      {
+        value:'$$$$',
+        score:4.5
+      }
+    ]
+  }
+]

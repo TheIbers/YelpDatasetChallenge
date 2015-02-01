@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html ng-app="visualizerApp">
+<head>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <script src="js/angular.min.js"></script>
+    <script src="js/main.js"></script>
+
+</head>
+<body ng-controller="MainController as main">
+
+<div class="container">
+
+    <div class="page-header">
+        <h1>Yelp Dataset Challenge <small>Jonathan Ibers and Kason Tey</small></h1>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <ul class="list-group" ng-controller="ListController as list" ng-repeat="attribute in main.attributes"> <h3>{{attribute.attribute}}</h3>
+                <a href="" ng-click="list.setSelection(score.value, attribute.attribute)" ng-repeat="score in attribute.scores">
+                    <li class="list-group-item" ng-style="{'background-color': list.getColor(score.value)}">
+                        {{score.value}} , {{score.score}}
+                    </li>
+                </a>
+            </ul>
+        </div>
+        <div class="col-md-1" style="background-color: blue"></div>
+        <div  ng-controller="VisualizationController" class="col-md-8" style="background-color: #000000"></div>
+    </div>
+</div>
+
+</body>
+</html>
